@@ -1,0 +1,977 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 17 2025 02:53:04 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68c1004bfbceec8cbd9ac51d" data-wf-site="68c1004bfbceec8cbd9ac51b">
+<head>
+  <meta charset="utf-8">
+  <title>PiBook Bio</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/pbb3-concept1-fbbba4299091ef182b3aaf97b.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Keep this css code to improve the font quality -->
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+</style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles">
+      <div class="style-overrides w-embed">
+        <style>
+/* Ensure all elements inherit the color from its parent */
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-nav-brand,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-slider-arrow-left,
+.w-slider-arrow-right,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+/* Remove default Webflow chevron from form select */
+select{
+  -webkit-appearance:none;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+</style>
+      </div>
+      <div class="color-schemes w-embed">
+        <style>
+/* Color Schemes Controls*/
+<meta name="relume-color-schemes" content="false"/>
+  .color-scheme-1 {
+/*All sections should point to Color Scheme 1*/
+  }
+  .color-scheme-2 {
+    --color-scheme-1--text: var(--color-scheme-2--text);
+    --color-scheme-1--background: var(--color-scheme-2--background);
+    --color-scheme-1--foreground: var(--color-scheme-2--foreground);
+    --color-scheme-1--border: var(--color-scheme-2--border);
+    --color-scheme-1--accent: var(--color-scheme-2--accent);
+  }
+  .color-scheme-3 {
+    --color-scheme-1--text: var(--color-scheme-3--text);
+    --color-scheme-1--background: var(--color-scheme-3--background);
+    --color-scheme-1--foreground: var(--color-scheme-3--foreground);
+    --color-scheme-1--border: var(--color-scheme-3--border);
+    --color-scheme-1--accent: var(--color-scheme-3--accent);
+  }
+  .color-scheme-4 {
+    --color-scheme-1--text: var(--color-scheme-4--text);
+    --color-scheme-1--background: var(--color-scheme-4--background);
+    --color-scheme-1--foreground: var(--color-scheme-4--foreground);
+    --color-scheme-1--border: var(--color-scheme-4--border);
+    --color-scheme-1--accent: var(--color-scheme-4--accent);
+  }
+  .color-scheme-5 {
+    --color-scheme-1--text: var(--color-scheme-5--text);
+    --color-scheme-1--background: var(--color-scheme-5--background);
+    --color-scheme-1--foreground: var(--color-scheme-5--foreground);
+    --color-scheme-1--border: var(--color-scheme-5--border);
+    --color-scheme-1--accent: var(--color-scheme-5--accent);
+  }
+  .color-scheme-6 {
+    --color-scheme-1--text: var(--color-scheme-6--text);
+    --color-scheme-1--background: var(--color-scheme-6--background);
+    --color-scheme-1--foreground: var(--color-scheme-6--foreground);
+    --color-scheme-1--border: var(--color-scheme-6--border);
+    --color-scheme-1--accent: var(--color-scheme-6--accent);
+  }
+  .color-scheme-7 {
+    --color-scheme-1--text: var(--color-scheme-7--text);
+    --color-scheme-1--background: var(--color-scheme-7--background);
+    --color-scheme-1--foreground: var(--color-scheme-7--foreground);
+    --color-scheme-1--border: var(--color-scheme-7--border);
+    --color-scheme-1--accent: var(--color-scheme-7--accent);
+  }
+  .color-scheme-8 {
+    --color-scheme-1--text: var(--color-scheme-8--text);
+    --color-scheme-1--background: var(--color-scheme-8--background);
+    --color-scheme-1--foreground: var(--color-scheme-8--foreground);
+    --color-scheme-1--border: var(--color-scheme-8--border);
+    --color-scheme-1--accent: var(--color-scheme-8--accent);
+  }
+  .color-scheme-9 {
+    --color-scheme-1--text: var(--color-scheme-9--text);
+    --color-scheme-1--background: var(--color-scheme-9--background);
+    --color-scheme-1--foreground: var(--color-scheme-9--foreground);
+    --color-scheme-1--border: var(--color-scheme-9--border);
+    --color-scheme-1--accent: var(--color-scheme-9--accent);
+  }
+  .color-scheme-10 {
+    --color-scheme-1--text: var(--color-scheme-10--text);
+    --color-scheme-1--background: var(--color-scheme-10--background);
+    --color-scheme-1--foreground: var(--color-scheme-10--foreground);
+    --color-scheme-1--border: var(--color-scheme-10--border);
+    --color-scheme-1--accent: var(--color-scheme-10--accent);
+  }
+/* Inherit slider dot colors */
+.w-slider-dot {
+  background-color: var(--color-scheme-1--text);
+  opacity: 0.20;
+}
+.w-slider-dot.w-active {
+  background-color: var(--color-scheme-1--text);
+  opacity: 1;
+}
+/* Override .w-slider-nav-invert styles */
+.w-slider-nav-invert .w-slider-dot {
+  background-color: var(--color-scheme-1--text) !important;
+  opacity: 0.20 !important;
+}
+.w-slider-nav-invert .w-slider-dot.w-active {
+  background-color: var(--color-scheme-1--text) !important;
+  opacity: 1 !important;
+}
+</style>
+      </div>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav" data-easing="ease" data-easing2="ease" role="banner" class="navbar1_component color-scheme-1 w-nav">
+      <div class="navbar1_container">
+        <a href="#" class="navbar1_logo-link w-nav-brand"><img width="150" sizes="149.98843383789062px" alt="" src="images/Logo_4.jpg" loading="lazy" srcset="images/Logo_4-p-500.jpg 500w, images/Logo_4.jpg 575w" class="navbar1_logo"></a>
+        <nav role="navigation" class="navbar1_menu is-page-height-tablet w-nav-menu">
+          <div class="navbar1_menu-links">
+            <a href="#Home" class="navbar1_link w-nav-link">Home</a>
+            <a href="#What-We-offer" class="navbar1_link w-nav-link">What We Offer</a>
+            <a href="#Technology-Platforms" class="navbar1_link w-nav-link">Technology</a>
+            <a href="#Why-Choose-PiBook" class="navbar1_link w-nav-link">Why Choose Us</a>
+            <a href="#Our-Team" class="navbar1_link w-nav-link">Team</a>
+            <a href="#Contact-Us" class="navbar1_link w-nav-link">Contact Us</a>
+          </div>
+        </nav>
+        <div class="navbar1_menu-button w-nav-button">
+          <div class="menu-icon1">
+            <div class="menu-icon1_line-top"></div>
+            <div class="menu-icon1_line-middle">
+              <div class="menu-icon1_line-middle-inner"></div>
+            </div>
+            <div class="menu-icon1_line-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <header class="section_header1 color-scheme-1">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="header1_component">
+                <div id="Home" class="w-layout-grid header1_content">
+                  <div class="header1_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h1 class="heading-style-h1">PiBook Bio: Engineered Data for Engineered Biology</h1>
+                    </div>
+                    <p class="text-size-medium">Custom Protein Data &amp; Engineering Services. Tailored. Scalable. Impactful. PiBook empowers biotech with AI-scale experimental datasets, outcome-driven protein engineering campaigns, and rapid binary protein complex structure discovery.</p>
+                  </div>
+                  <div class="header1_image-wrapper"><img sizes="100vw" srcset="images/relume-258986-p-500.png 500w, images/relume-258986-p-800.png 800w, images/relume-258986.png 1024w" alt="" src="images/relume-258986.png" loading="eager" class="header1_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header class="section_header62 color-scheme-5">
+        <div class="padding-global">
+          <div class="container-large">
+            <div id="What-We-offer" class="padding-section-large">
+              <div class="header62_component">
+                <div class="text-align-center">
+                  <div class="max-width-large align-center">
+                    <div class="margin-bottom margin-small">
+                      <h1 class="heading-style-h1">What We Offer</h1>
+                    </div>
+                    <p class="text-size-medium">Explore our services that elevate your biotech research and development to the next level.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section_layout1 color-scheme-2">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout1_component">
+                <div class="w-layout-grid layout1_content">
+                  <div class="layout1_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Comprehensive Data to Train Protein Design AI</h2>
+                    </div>
+                    <p class="text-size-medium">We generate vast amounts of experimentally verified data for Protein-Protein and Protease-Substrate Interactions. Our advanced integration of multiple assays ensures accuracy and reliability, making our data perfect for machine learning applications.</p>
+                  </div>
+                  <div class="layout1_image-wrapper"><img sizes="100vw" srcset="images/relume-259006-p-500.jpeg 500w, images/relume-259006-p-800.jpeg 800w, images/relume-259006-p-1080.jpeg 1080w, images/relume-259006-p-1600.jpeg 1600w, images/relume-259006-p-2000.jpeg 2000w, images/relume-259006.jpeg 2550w" alt="" src="images/relume-259006.jpeg" loading="eager" class="layout1_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout10 color-scheme-2">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout10_component">
+                <div class="w-layout-grid layout10_content">
+                  <div class="layout10_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Tailored Protein Engineering Solutions for You</h2>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <p class="text-size-medium">Our protein engineering campaigns are designed to enhance affinity and specificity for protein-protein interactions. We focus on protease redesign to create novel substrate specificity, ensuring impactful results for your research.</p>
+                    </div>
+                    <div class="w-layout-grid layout10_item-list">
+                      <div class="layout10_item">
+                        <div class="margin-bottom margin-xsmall">
+                          <div class="layout10_item-icon-wrapper">
+                            <div class="icon-1x1-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                                <path fill="currentColor" d="M594.04-357v40q0 10.83 7.12 17.92 7.12 7.08 18 7.08 10.64 0 17.76-7.08 7.12-7.09 7.12-17.92v-40h41q14.45 0 24.23-9.49 9.77-9.49 9.77-23.51v-179q0-14.45-9.77-24.22-9.78-9.78-24.23-9.78h-126q-14.24 0-27.12 9.78-12.88 9.77-12.88 24.22v179q0 14.02 12.88 23.51Q544.8-357 559.04-357h35ZM291.2-446h100v64q0 10.83 7.11 17.92 7.12 7.08 18 7.08 10.65 0 17.77-7.08 7.12-7.09 7.12-17.92v-196q0-10.83-7.24-17.92-7.24-7.08-18-7.08t-17.76 7.08q-7 7.09-7 17.92v82h-100v-82q0-10.83-7.24-17.92-7.24-7.08-18-7.08t-17.76 7.08q-7 7.09-7 17.92v196q0 10.83 7.11 17.92 7.12 7.08 17.88 7.08 10.77 0 17.89-7.08 7.12-7.09 7.12-17.92v-64Zm277.84 39v-146h100v146h-100ZM142.15-154.02q-27.6 0-47.86-20.27-20.27-20.26-20.27-47.86v-515.7q0-27.7 20.27-48.03 20.26-20.34 47.86-20.34h675.7q27.7 0 48.03 20.34 20.34 20.33 20.34 48.03v515.7q0 27.6-20.34 47.86-20.33 20.27-48.03 20.27h-675.7Zm0-68.13h675.7v-515.7h-675.7v515.7Zm0 0v-515.7 515.7Z"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Outcome-Driven</h3>
+                        </div>
+                        <p>Achieve the highest quality results with our expert-driven experimental campaigns.</p>
+                      </div>
+                      <div class="layout10_item">
+                        <div class="margin-bottom margin-xsmall">
+                          <div class="layout10_item-icon-wrapper">
+                            <div class="icon-1x1-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                                <path fill="currentColor" d="m353.65-517.78 88.33-88.33-71.18-70.93-27.47 27q-9.24 9.47-21.36 9.24-12.12-.24-21.36-9.24-9-9.24-9-21.48t9-21.24l27.48-27.48-73.33-72.09-88.09 88.57 186.98 185.98ZM703-166.43l88.33-89.33-73.57-73.33-27.24 27.48q-9.24 9-21.48 9t-21.24-9.24q-9.23-9.24-9.23-21.48t9.23-21.47l27.24-27.24-70.17-70.42-88.57 88.57L703-166.43Zm7.04-613.09 70 70.24-70-70.24Zm-561.95 665.5q-14.68 0-24.37-9.7-9.7-9.69-9.7-24.37v-116.39q0-6.95 2.24-12.67t7.72-11.2L306.83-471.2l-196.5-196.26Q94.65-683.37 95.03-704q.38-20.63 15.3-36.54l107.13-108.89q15.67-15.92 36.3-15.92 20.63 0 36.54 15.68l198.5 197.74L665.37-828.5q9.24-9.24 20.6-13.48 11.36-4.24 22.83-4.24 11.48 0 22.84 4.24t20.6 13.48l76.26 76.02q9.24 9.24 13.48 20.6 4.24 11.36 4.24 22.84 0 11.71-4.24 23.07t-13.48 20.6L651.93-489.04 849.67-291.3q15.68 15.91 15.68 36.54t-15.68 36.3L741.78-111.33q-15.91 15.68-36.54 15.68t-36.54-15.68L471.72-308.3 287.87-124.22q-5.48 5.48-11.2 7.84-5.71 2.36-12.43 2.36H148.09Zm31.43-65.5h70.24l385.11-386.35-70-70.24L179.52-250v70.48Zm420.35-421.59-35-35 70 70.24-35-35.24Z"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Innovative Design</h3>
+                        </div>
+                        <p>We optimize every aspect for superior research outcomes.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout10_image-wrapper"><img sizes="100vw" srcset="images/relume-259009-p-500.jpeg 500w, images/relume-259009-p-800.jpeg 800w, images/relume-259009-p-1080.jpeg 1080w, images/relume-259009-p-1600.jpeg 1600w, images/relume-259009-p-2000.jpeg 2000w, images/relume-259009.jpeg 2548w" alt="" src="images/relume-259009.jpeg" loading="eager" class="layout10_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout12 color-scheme-2">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout12_component">
+                <div class="w-layout-grid layout12_content">
+                  <div class="layout12_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h3">Accelerated Structure Determination for Protein Complexes at Unmatched Speed</h2>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <p class="text-size-medium">Our service provides rapid and accurate structures of binary protein complexes, even for those that are weakly bound. This innovative approach supports structural validation and enhances AI training with experimental data.</p>
+                    </div>
+                    <div class="w-layout-grid layout12_item-list">
+                      <div class="layout12_item">
+                        <div class="margin-bottom margin-xsmall">
+                          <div class="layout12_item-icon-wrapper">
+                            <div class="icon-1x1-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                                <path fill="currentColor" d="M402.85-277H261.41q-25.83 0-44.23-18.4t-18.4-44.23v-110.94q0-25.91 18.36-44.39 18.36-18.47 44.27-18.47h110v-106.94H229.98q-13.26 0-22.23-9.08t-8.97-22.5q0-13.33 9.04-22.19 9.04-8.86 22.4-8.86h141.19q25.92 0 44.27 18.36 18.36 18.36 18.36 44.27v106.94q0 25.91-18.36 44.39-18.35 18.47-44.27 18.47h-110v110.94h141.44q13.26 0 22.22 9.01 8.97 9.02 8.97 22.34t-8.97 22.3q-8.96 8.98-22.22 8.98Zm240.5-152.46-72.94 133.03q-4.76 7.77-11.97 12.1-7.2 4.33-15.62 4.33-18.47 0-27.07-15.32-8.6-15.31-.12-30.75l88.13-160.41-81.41-147.45q-8.96-15.44-.62-30.75 8.34-15.32 26.9-15.32 8.35 0 15.53 4.35t11.97 12.08l67.22 121.07 66.45-121.07q4.53-7.77 11.73-12.1 7.21-4.33 15.63-4.33 18.47 0 27.31 15.32 8.83 15.31.12 30.51l-81.66 147.69 89.14 161.41q8.47 15.44-.24 30.25Q763.11-280 744.45-280q-8.4 0-15.15-4.09-6.76-4.08-11.26-11.34l-74.69-134.03Z"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Speedy Solutions</h3>
+                        </div>
+                        <p>Faster results for structural validation of engineered protein variants.</p>
+                      </div>
+                      <div class="layout12_item">
+                        <div class="margin-bottom margin-xsmall">
+                          <div class="layout12_item-icon-wrapper">
+                            <div class="icon-1x1-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                                <path fill="currentColor" d="M441.04-202.59q0-21.71-15.47-44.31-15.48-22.6-33.58-46.2-18.1-23.6-33.46-49.81-15.36-26.22-15.36-55.18 0-56.67 40.2-96.75 40.2-40.07 96.63-40.07 56.67 0 96.75 40.07 40.08 40.08 40.08 96.75 0 28.96-15.36 55.18-15.36 26.21-33.46 49.81t-33.46 46.2q-15.35 22.6-15.35 44.31h-78.16ZM480-109.72q-17.48 0-29.22-11.86-11.74-11.85-11.74-29.33v-10.48h82.16v10.48q0 17.48-11.86 29.33-11.86 11.86-29.34 11.86Zm253.3-116.02q-7.71-7.72-9.07-19.65-1.36-11.94 5.36-21.37 24-35.24 38.88-78.74 14.88-43.5 14.88-94.5 0-55.13-19.83-106.86-19.82-51.73-60.72-94.53-8.76-10.2-8.9-23.15-.14-12.96 9.34-22.44 11.15-11.15 26.66-10.81 15.51.33 25.23 12.44 44.65 48.28 70.5 110.75T851.48-440q0 58.43-16.5 111.65-16.5 53.22-47.74 98.18-9.2 13.91-25.23 15.51-16.03 1.59-28.71-11.08Zm-560.06-4.72q-30.48-45.19-47.6-98.27Q108.52-381.8 108.52-440q0-152.63 106.08-260.24 106.07-107.61 259.42-110l37.81 2-58.33-58.56q-9.72-9.48-9.72-21.84t9.72-21.84q9.72-9.24 22.08-9.36 12.35-.12 21.83 9.36L617.33-790.8q5.71 5.71 8.07 11.43 2.36 5.72 2.36 12.44 0 6.95-2.36 12.79-2.36 5.84-8.07 11.31L497.41-622.91q-10.48 10.24-22.57 9.86-12.1-.38-21.34-9.86-9.48-9.24-9.48-22.34t9.48-22.34l69.52-70.28-48.52-4q-125.24 1.91-211.42 89.75-86.19 87.84-86.19 212.12 0 43.8 13.02 89.66t40.26 83.58q6.72 9.43 6.1 20.87-.62 11.43-8.57 19.15-12.44 12.44-28.85 11.32-16.42-1.12-25.61-15.04Z"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Innovative Approach</h3>
+                        </div>
+                        <p>Experimental data enhances AI training and predictive modeling capabilities.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout12_image-wrapper"><img sizes="100vw" srcset="images/relume-259060-p-500.jpeg 500w, images/relume-259060-p-800.jpeg 800w, images/relume-259060.jpeg 992w" alt="" src="images/relume-259060.jpeg" loading="eager" class="layout12_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header class="section_header62 color-scheme-6">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="header62_component">
+                <div class="text-align-center">
+                  <div id="Technology-Platforms" class="max-width-large align-center">
+                    <div class="margin-bottom margin-small">
+                      <h1 class="heading-style-h1">Technology Platforms</h1>
+                    </div>
+                    <p class="text-size-medium">Explore our state-of-the-art platforms designed for cutting-edge protein engineering and data solutions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section_layout6 color-scheme-7">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout6_component">
+                <div class="w-layout-grid layout6_content">
+                  <div class="layout6_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h3">Phage Display: Unleashing the Power of Antibody Variant Screening</h2>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <p class="text-size-medium">Our Phage Display technology screens billions of antibody and other desired protein variants simultaneously, ensuring rapid identification of high-affinity binders. This iterative selection process optimizes specificity and affinity for your unique applications.</p>
+                    </div>
+                    <div class="w-layout-grid layout6_item-list">
+                      <div class="layout6_text-wrapper">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Key Specs</h3>
+                        </div>
+                        <p>Library size: 10⁸–10⁹, Platform: M13 phage in E. coli</p>
+                      </div>
+                      <div class="layout6_text-wrapper">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h6">Output</h3>
+                        </div>
+                        <p>High-confidence variant tables, ready for engineering or training</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout6_image-wrapper"><img sizes="100vw" srcset="images/relume-259151-p-500.jpeg 500w, images/relume-259151-p-800.jpeg 800w, images/relume-259151-p-1080.jpeg 1080w, images/relume-259151-p-1600.jpeg 1600w, images/relume-259151-p-2000.jpeg 2000w, images/relume-259151.jpeg 2448w" alt="" src="images/relume-259151.jpeg" loading="eager" class="layout6_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout1 color-scheme-7">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout1_component">
+                <div class="w-layout-grid layout1_content">
+                  <div class="layout1_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Interaction Strength, Measured by Survival</h2>
+                    </div>
+                    <p class="text-size-medium">Our in vivo protein-fragment complementation system in <em>E. coli</em> utilizes antibiotic resistance as a direct measure of binding strength. This method is ideal for efficiently mapping and ranking protein-protein interactions at scale.</p>
+                  </div>
+                  <div class="layout1_image-wrapper"><img sizes="100vw" srcset="images/relume-259161-p-500.jpeg 500w, images/relume-259161-p-800.jpeg 800w, images/relume-259161-p-1080.jpeg 1080w, images/relume-259161.jpeg 1093w" alt="" src="images/relume-259161.jpeg" loading="eager" class="layout1_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout89 color-scheme-7">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout89_component">
+                <div class="margin-bottom margin-xxlarge">
+                  <div class="w-layout-grid layout89_content">
+                    <div class="layout89_content-left">
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="text-style-tagline">Fluorescence-Based PCA</div>
+                      </div>
+                      <h2 class="heading-style-h2">Real-Time Protein Interaction Sensing</h2>
+                    </div>
+                    <div class="layout89_content-right">
+                      <p class="text-size-medium">Our Fluorescence-Based PCA utilizes a split-fluorescence system that reconstitutes upon the binding of variant fragments. This innovative approach allows for real-time, dynamic readouts of weak or transient protein interactions, providing more than just binary data. With quantified PPI signal curves, this platform is ideal for validation processes and AI tuning.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout89_image-wrapper"><img sizes="100vw" srcset="images/relume-259180-p-500.jpeg 500w, images/relume-259180-p-800.jpeg 800w, images/relume-259180-p-1080.jpeg 1080w, images/relume-259180.jpeg 1384w" alt="" src="images/relume-259180.jpeg" loading="eager" class="layout89_image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout16 color-scheme-7">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout16_component">
+                <div class="w-layout-grid layout16_content">
+                  <div class="layout16_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Selection-Driven Discovery of Optimal Cleavage</h2>
+                    </div>
+                    <div class="margin-bottom margin-small">
+                      <p class="text-size-medium">Our Protease Evolution Systems utilize two innovative selection methods to evolve proteases and identify novel substrate motifs. These systems are guided by antibiotic-based survival pressure, ensuring optimal cleavage discovery.</p>
+                    </div>
+                    <div class="layout16_item-list">
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a79e6-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M544.24-382.07q12.83 0 21.33-8.62 8.5-8.63 8.5-21.38v-102h102q12.75 0 21.37-8.67 8.63-8.68 8.63-21.5 0-12.83-8.63-21.33-8.62-8.5-21.37-8.5h-102v-102q0-12.75-8.68-21.37-8.68-8.63-21.5-8.63t-21.32 8.63q-8.5 8.62-8.5 21.37v102h-102q-12.75 0-21.38 8.68-8.62 8.68-8.62 21.5t8.62 21.32q8.63 8.5 21.38 8.5h102v102q0 12.75 8.67 21.38 8.68 8.62 21.5 8.62ZM266.22-198.09q-27.6 0-47.87-20.26-20.26-20.27-20.26-47.87v-555.69q0-27.7 20.26-48.04 20.27-20.33 47.87-20.33h555.69q27.7 0 48.04 20.33 20.33 20.34 20.33 48.04v555.69q0 27.6-20.33 47.87-20.34 20.26-48.04 20.26H266.22Zm0-68.13h555.69v-555.69H266.22v555.69ZM138.09-69.72q-27.7 0-48.04-20.33-20.33-20.34-20.33-48.04v-589.76q0-14.42 9.87-24.24 9.87-9.82 24.49-9.82t24.31 9.82q9.7 9.82 9.7 24.24v589.76h589.76q14.42 0 24.24 9.87 9.82 9.88 9.82 24.49 0 14.62-9.82 24.32-9.82 9.69-24.24 9.69H138.09Zm128.13-752.19v555.69-555.69Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Library size: 10⁸–10⁹</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a79ec-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M660.83-250.91 533.65-123.98q-9.08 9.2-22.83 9.58-13.75.38-23.95-9.7-10.2-10.31-10.2-24.97 0-14.66 9.96-24.41l125.7-125.69-126.7-126.94q-10.2-10.08-9.58-23.45.62-13.37 10.58-23.57 10.14-10.2 24.1-10.7 13.97-.5 23.92 9.46l126.18 126.94 126.93-126.94q9.96-9.96 24.01-9.46 14.06.5 24.01 10.58 10.2 10.08 10.2 23.51 0 13.44-10.2 23.63L709.09-299.17l126.69 126.93q10.2 10.2 10.2 24.13 0 13.94-10.2 24.01-10.19 10.08-24.13 9.58-13.93-.5-23.89-10.7L660.83-250.91ZM147.82-777.85q-14.41 0-24.1-9.96-9.7-9.96-9.7-24.37t9.92-24.22q9.91-9.82 24.25-9.82 14.33 0 24.15 10.01 9.81 10 9.81 24.47 0 14.37-9.96 24.13t-24.37 9.76Zm166.05 0q-14.37 0-24.13-9.96t-9.76-24.37q0-14.41 9.96-24.22 9.96-9.82 24.37-9.82t24.22 10.01q9.82 10 9.82 24.47 0 14.37-10.01 24.13-10 9.76-24.47 9.76Zm165.95 0q-14.49 0-24.19-9.96-9.7-9.96-9.7-24.37t9.88-24.22q9.87-9.82 24.37-9.82 14.49 0 24.19 10.01 9.7 10 9.7 24.47 0 14.37-9.88 24.13-9.87 9.76-24.37 9.76Zm166.11 0q-14.41 0-24.22-9.96-9.82-9.96-9.82-24.37t10.01-24.22q10-9.82 24.47-9.82 14.37 0 24.13 10.01 9.76 10 9.76 24.47 0 14.37-9.96 24.13-9.97 9.76-24.37 9.76Zm165.81 0q-14.37 0-24.13-9.96t-9.76-24.37q0-14.41 9.96-24.22 9.96-9.82 24.37-9.82t24.22 10.01q9.82 10 9.82 24.47 0 14.37-10.01 24.13-10 9.76-24.47 9.76ZM313.87-114.02q-14.37 0-24.13-9.92-9.76-9.91-9.76-24.25 0-14.33 9.96-24.15 9.96-9.81 24.37-9.81t24.22 9.96q9.82 9.96 9.82 24.37t-10.01 24.1q-10 9.7-24.47 9.7ZM147.84-611.89q-14.34 0-24.08-10.01-9.74-10-9.74-24.47 0-14.37 9.92-24.13 9.91-9.76 24.25-9.76 14.33 0 25.94 10.95 11.61 10.94 11.61 25.32t-11.78 23.24q-11.79 8.86-26.12 8.86Zm-.02 165.96q-14.41 0-24.1-9.88-9.7-9.87-9.7-24.37 0-14.49 9.92-24.19 9.91-9.7 24.25-9.7 14.33 0 24.15 9.88 9.81 9.87 9.81 24.37 0 14.49-9.96 24.19-9.96 9.7-24.37 9.7Zm0 165.95q-14.41 0-24.1-9.96-9.7-9.96-9.7-24.37t9.92-24.22q9.91-9.82 24.25-9.82 14.33 0 24.15 10.01 9.81 10 9.81 24.47 0 14.37-9.96 24.13t-24.37 9.76Zm0 165.96q-14.41 0-24.1-9.92-9.7-9.91-9.7-24.25 0-14.33 9.92-24.15 9.91-9.81 24.25-9.81 14.33 0 24.15 9.96 9.81 9.96 9.81 24.37t-9.96 24.1q-9.96 9.7-24.37 9.7Zm663.92-497.87q-14.37 0-24.13-10.01-9.76-10-9.76-24.47 0-14.37 9.96-24.13t24.37-9.76q14.41 0 24.22 9.96 9.82 9.97 9.82 24.37 0 14.41-10.01 24.22-10 9.82-24.47 9.82Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Platform: Positive/negative selection in bacteria</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a79f2-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M182.15-114.02q-27.6 0-47.86-20.27-20.27-20.26-20.27-47.86v-595.7q0-27.7 20.27-48.03 20.26-20.34 47.86-20.34h595.94q27.6 0 47.86 20.34 20.27 20.33 20.27 48.03v53.07q0 14.66-9.87 24.48t-24.37 9.82q-14.5 0-24.2-9.82-9.69-9.82-9.69-24.48v-53.07H182.15v595.7h595.94v-53.31q0-14.42 9.87-24.24 9.87-9.82 24.37-9.82 14.5 0 24.19 9.82 9.7 9.82 9.7 24.24v53.31q0 27.6-20.27 47.86-20.26 20.27-47.86 20.27H182.15Zm573.28-331.91H389.52q-14.42 0-24.24-9.88-9.82-9.87-9.82-24.37 0-14.49 9.82-24.19 9.82-9.7 24.24-9.7h365.91L673-597.5q-9.2-10.2-9.58-23.92-.38-13.73 9.82-23.82 10.19-10.19 23.87-10.19 13.67 0 23.87 10.19l141.13 141.13q5.46 5.52 7.94 11.62 2.49 6.09 2.49 12.65 0 6.56-2.49 12.5-2.48 5.95-7.94 11.45L720.98-314.76q-10.2 10.19-23.82 10.19-13.63 0-23.92-10.19-10.2-10.2-10.32-23.87-.12-13.67 10.08-23.87l82.43-83.43Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Readout: Functional cleavage via growth</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout16_image-wrapper"><img sizes="100vw" srcset="images/relume-259218-p-500.jpeg 500w, images/relume-259218-p-800.jpeg 800w, images/relume-259218-p-1080.jpeg 1080w, images/relume-259218.jpeg 1127w" alt="" src="images/relume-259218.jpeg" loading="eager" class="layout16_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout3 color-scheme-7">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout3_component">
+                <div class="w-layout-grid layout3_content">
+                  <div class="layout3_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h3">Binary Complex Structure Platforms: Accelerated Insights for AI-Driven Discoveries</h2>
+                    </div>
+                    <p class="text-size-medium">Our advanced platforms provide rapid structural insights into weak and transient binary complexes, seamlessly integrating with X-ray and Cryo-EM technologies. This ensures that your data-driven decisions are grounded in atomic-resolution models and contact maps, enhancing validation and optimization efforts.</p>
+                  </div>
+                  <div class="layout3_image-wrapper"><img sizes="100vw" srcset="images/relume-259261-p-500.jpeg 500w, images/relume-259261-p-800.jpeg 800w, images/relume-259261-p-1080.jpeg 1080w, images/relume-259261.jpeg 1123w" alt="" src="images/relume-259261.jpeg" loading="eager" class="layout3_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header class="section_header69 text-color-white">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="header69_component">
+                <div class="text-align-center">
+                  <div id="Why-Choose-PiBook" class="max-width-large align-center">
+                    <div class="margin-bottom margin-small">
+                      <h1 class="heading-style-h1">Why Choose PiBook</h1>
+                    </div>
+                    <p class="text-size-medium">Discover the advantages of partnering with PiBook for your protein engineering and data needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header69_background-image-wrapper">
+          <div class="image-overlay-layer"></div><img sizes="100vw" srcset="images/background-4-p-500.jpeg 500w, images/background-4-p-800.jpeg 800w, images/background-4-p-1080.jpeg 1080w, images/background-4-p-1600.jpeg 1600w, images/background-4-p-2000.jpeg 2000w, images/background-4-p-2600.jpeg 2600w, images/background-4-p-3200.jpeg 3200w, images/background-4.jpeg 4000w" alt="" src="images/background-4.jpeg" loading="eager" class="header69_background-image">
+        </div>
+      </header>
+      <section class="section_layout4 color-scheme-4">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout4_component">
+                <div class="w-layout-grid layout4_content">
+                  <div class="layout4_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Data Built for AI</h2>
+                    </div>
+                    <p class="text-size-medium">At PiBook Bio, we provide unparalleled data solutions tailored for AI applications. Our commitment to quality ensures that every dataset is structured, annotated, and ready for predictive modeling.</p>
+                  </div>
+                  <div class="layout4_image-wrapper"><img sizes="(max-width: 540px) 100vw, 540px" srcset="images/relume-259320-p-500.jpeg 500w, images/relume-259320.jpeg 540w" alt="" src="images/relume-259320.jpeg" loading="eager" class="layout4_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout18 color-scheme-4">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout18_component">
+                <div class="w-layout-grid layout18_content">
+                  <div class="layout18_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h3">Scalable Platforms: Optimized for Thousands to Billions of Variants with Precision</h2>
+                    </div>
+                    <div class="margin-bottom margin-small">
+                      <p class="text-size-medium">Our scalable platforms are designed to efficiently manage a vast range of variants, from thousands to billions. This ensures that we maintain biological accuracy while delivering high-quality results.</p>
+                    </div>
+                    <div class="layout18_item-list">
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a33-bd9ac51d" class="layout18_item">
+                        <div class="layout18_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M36.26-148.33v-64.15q0-36.98 17.56-60.62 17.55-23.64 46.79-37.64 54-26 116.81-43.24 62.82-17.24 140.94-17.24t140.81 17q62.7 17 116.94 43 29 14.24 46.55 38.05 17.56 23.8 17.56 60.69v64.15q0 14.68-9.7 24.37-9.69 9.7-24.37 9.7H70.33q-14.68 0-24.37-9.7-9.7-9.69-9.7-24.37Zm68.37-34.3h507.46v-29.13q0-15-8.5-24.14t-20.5-14.14q-43-19-95.52-36.03-52.53-17.02-129.21-17.02-76.69 0-129.21 17.14-52.52 17.15-95.52 35.96-12.24 4.95-20.62 14.09t-8.38 24.14v29.13Zm253.73-248.59q-68.51 0-112.31-44.61-43.79-44.61-43.79-110.17h-10q-8.75 0-15.21-6.48-6.46-6.47-6.46-15.25 0-8.67 6.46-15.15 6.46-6.47 15.21-6.47h10q0-41.19 21.32-74.51 21.31-33.31 55.94-53.08v39.15q0 6.33 4.45 10.71 4.44 4.38 10.79 4.38 6.76 0 11-4.36t4.24-10.57v-51.83q8.08-1.76 22.18-3.38 14.09-1.62 27.2-1.62 12.86 0 26.86 1.62t22.19 3.37v51.84q0 6.21 4.26 10.57 4.27 4.36 11.27 4.36 6.24 0 10.74-4.38t4.5-10.62v-39.24q34.39 19.77 54.7 53.07 20.32 33.31 20.32 74.52h10q8.75 0 15.21 6.46 6.46 6.45 6.46 15.19 0 8.74-6.46 15.22T524.22-586h-10q0 65.67-43.68 110.23-43.67 44.55-112.18 44.55Zm.11-68.37q40.81 0 64.21-24.37 23.41-24.36 23.41-63.48H270.63q0 39.05 23.37 63.45 23.36 24.4 64.47 24.4Zm305.07 110.98-1-10q-7-4-14.53-9-7.54-5-13.58-10.24l-11.08 6q-7.13 4-13.63 2.03-6.51-1.97-11.22-7.88l-.96-1.91q-5-7-3.5-14.5t7.5-12.5l11-8q-2-4-2-7.5v-15q0-3.5 2-7.5l-11-8q-6-5-7.5-12t3.5-14l1-3q4.76-6 11.34-8t13.66 2l11 6 14-10q7-5 14-9l1-11q1-8 6.5-13t13.5-5h2q7.76 0 13.34 5.5t6.62 13.5l1.04 10q7 3.94 13.88 8.97 6.88 5.03 14.12 10.03l11-6q7-4 13.5-2t11.5 8l1 2q4.76 7 3.38 14.5t-7.38 12.5l-11 8q1.76 4 1.88 7.5.12 3.5.12 7.5t-.12 7.5q-.12 3.5-1.88 7.5l11 8q6 5 7.38 12t-3.5 14l-.88 3q-5 6-11.5 8t-13.5-2l-11-6q-6 5-13.5 10t-14.5 9l-1.04 11q-1.04 8-6.62 13t-13.34 5h-2q-8 0-13.5-5.5t-6.5-13.5Zm21-43q16 0 27-11t11-27q0-16-11-27t-27.12-11q-16.12 0-27 11-10.88 11-10.88 27t10.88 27q10.88 11 27.12 11Zm85.2-170.67-5-21q-10-4-20.5-11t-17.5-15l-28 10.06q-7 2.18-13.5.06t-10.5-8.12l-4-6q-4-7-2.5-14t7.5-12l22-17q-2-5-3.5-11t-1.5-12q0-6 1.5-11.88 1.5-5.88 3.5-11.12l-22-17q-6-4.76-7.5-12.33-1.5-7.56 2.5-13.61l4-5.06q4-6 10.5-8.5t13.5-.5l28 10q7-7.76 17.5-15.35t20.5-10.65l5-21q2-6 7-10t11-4h10q6 0 11 4t7 10l5 21q10 3 20.5 10.62 10.5 7.62 17.5 15.38l28-10q7-2 13.5 0t10.5 8l4 6q4 7 2.5 14.12-1.5 7.12-7.5 11.88l-22 17q2 5.24 3.5 11.17 1.5 5.94 1.5 11.83 0 6-1.5 12t-3.5 11l22 17q6 5 7.5 12.5t-2.5 13.5l-4 5q-4 6-10.5 8.62-6.5 2.62-13.5.44l-28-10.06q-7 8-17.5 15t-20.5 11l-5 21q-2 6-7 10t-11 4h-10q-6 0-11-4t-7-10Zm23-59q25 0 41.5-16.5t16.5-41.5q0-25-16.5-41.5t-41.5-16.5q-25 0-41.5 16.5t-16.5 41.5q0 25 16.5 41.5t41.5 16.5ZM358.48-182.63Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout18_item-text-wrapper">
+                          <p>Optimized for high-throughput protein engineering workflows.</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a39-bd9ac51d" class="layout18_item">
+                        <div class="layout18_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M407.04-325.05q22.93 23.05 66.33 21.55Q516.76-305 537-336l175.89-274.02q8.2-12.44-1.62-22.25-9.81-9.82-22.25-1.62L418-456q-30 20.24-32 64.13t21.04 66.82ZM478-805.22q44.05 0 92.96 11.76 48.9 11.75 96.65 38.05 12.67 7.24 15 20.98 2.32 13.74-6.39 26.37-8.72 12.63-20.86 14.96-12.14 2.34-25.82-3.66-39.32-21.04-80.11-30.57-40.78-9.52-71.43-9.52-139.29 0-237.57 99.56-98.28 99.57-98.28 241.19 0 45.1 12.26 90.14 12.26 45.05 35.02 83.81h576.1q22.04-36 34.68-82.93Q812.85-352 812.85-398q0-33.43-8.52-72.2-8.53-38.78-28.57-74.58-7-12.92-4.78-27.71 2.22-14.79 14.61-22.81 12.11-8.66 26.47-4.42 14.35 4.24 20.59 17.92 22.55 44.69 34.68 89.1 12.13 44.42 13.89 88.6 1.76 60.58-12.42 114.48-14.19 53.91-41.54 99.73-13.19 24.43-27.87 30.15-14.67 5.72-36.39 5.72H192q-18.67 0-36.61-9.34-17.93-9.34-26.65-26.53-26.24-48.24-40.48-98.79-14.24-50.54-14.24-107.34 0-84.18 31.88-158.61t86.74-129.93q54.86-55.5 128.69-88.08T478-805.22Zm-5.65 333.87Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout18_item-text-wrapper">
+                          <p>Ensuring accuracy without sacrificing speed or efficiency.</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a3f-bd9ac51d" class="layout18_item">
+                        <div class="layout18_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M142.39-142.39v-315.22 315.22Zm675.22 0v-315.22 315.22Zm-50.42-486.7q24.29 0 40.7-16.38 16.41-16.38 16.41-40.6 0-24.21-16.43-40.75-16.43-16.53-40.71-16.53-24.29 0-40.7 16.5-16.42 16.5-16.42 40.72 0 24.21 16.43 40.63 16.43 16.41 40.72 16.41Zm-.04 66.46q-52.17 0-87.87-35.58-35.69-35.57-35.69-88.01 0-51.49 35.71-87.54 35.72-36.04 87.89-36.04 51.5 0 87.53 36.04 36.04 36.05 36.04 87.54 0 52.44-36.05 88.01-36.05 35.58-87.56 35.58Zm-286.85-111q31.5 0 54.17-22.33 22.66-22.33 22.66-55.1 0-31.51-22.51-54.17t-54.66-22.66q-32.53 0-54.81 22.51t-22.28 54.66q0 32.52 22.33 54.81 22.33 22.28 55.1 22.28Zm-.3 66.46q-60.43 0-102.01-41.58-41.58-41.58-41.58-102.01 0-59.49 41.58-101.54 41.58-42.05 102.01-42.05 59.49 0 101.54 42.05 42.05 42.05 42.05 101.54 0 60.43-42.05 102.01-42.05 41.58-101.54 41.58Zm-177.61 182q0 34.09 36.14 79.67Q374.67-299.91 480-204.35q104.08-94.9 140.84-139.75 36.77-44.86 36.77-81.14 0-30.6-20.11-51.48-20.11-20.89-49.6-20.89-17.1 0-32.16 8.76-15.07 8.76-28.83 20.28l-49.3 44.64h5.02l-50.3-44.64q-13.76-11.52-28.63-20.28-14.86-8.76-31.92-8.76-29.66 0-49.52 21.08-19.87 21.09-19.87 51.36Zm-66.46-.07q0-54.35 41.92-96.59 41.91-42.24 94.07-42.24 29.6 0 58.35 13.41 28.76 13.4 49.62 36.44 20.86-23.04 49.22-36.44 28.37-13.41 58.82-13.41 51.31 0 93.72 42.2 42.42 42.2 42.42 96.63 0 54.06-38.98 106.58-38.98 52.53-158.22 161.77L480-114.5l-46.63-42.39q-121.89-111.09-159.66-162.6-37.78-51.51-37.78-105.75Zm-43.09-203.85q24.29 0 40.7-16.38 16.42-16.38 16.42-40.6 0-24.21-16.43-40.75-16.43-16.53-40.72-16.53t-40.7 16.5q-16.41 16.5-16.41 40.72 0 24.21 16.43 40.63 16.43 16.41 40.71 16.41ZM483-75.93v-66.46h334.61v-315.22H678.72v-66.46h137.21q28.1 0 48.12 20.02 20.02 20.02 20.02 48.12V-110q0 14.42-9.83 24.24-9.82 9.83-24.24 9.83H483Zm-340.61-66.46H483v66.46H110q-14.42 0-24.24-9.83-9.83-9.82-9.83-24.24v-345.93q0-28.1 19.66-48.12 19.65-20.02 48.48-20.02h136.21v66.46H142.39v315.22Zm50.41-420.24q-52.17 0-87.87-35.58-35.69-35.57-35.69-88.01 0-51.49 35.71-87.54 35.72-36.04 87.89-36.04 51.5 0 87.54 36.04 36.03 36.05 36.03 87.54 0 52.44-36.05 88.01-36.05 35.58-87.56 35.58ZM480-750.76Zm-287.17 64.54Zm574.34 0Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout18_item-text-wrapper">
+                          <p>Delivering reliable results for diverse biological applications.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout18_image-wrapper"><img sizes="(max-width: 540px) 100vw, 540px" srcset="images/relume-259330-p-500.jpeg 500w, images/relume-259330.jpeg 540w" alt="" src="images/relume-259330.jpeg" loading="eager" class="layout18_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout3 color-scheme-4">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout3_component">
+                <div class="w-layout-grid layout3_content">
+                  <div class="layout3_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h3">Multi-System Validation: Ensuring Accuracy Through Independent Assay Confirmation</h2>
+                    </div>
+                    <p class="text-size-medium">Our commitment to precision means that every discovery is rigorously validated. By employing independent orthogonal assays, we ensure that our findings are reliable and reproducible.</p>
+                  </div>
+                  <div class="layout3_image-wrapper"><img sizes="(max-width: 767px) 100vw, 540.9838256835938px" srcset="images/relume-259341-p-500.jpeg 500w, images/relume-259341.jpeg 541w" alt="" src="images/relume-259341.jpeg" loading="eager" class="layout3_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout16 color-scheme-4">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout16_component">
+                <div class="w-layout-grid layout16_content">
+                  <div class="layout16_content-left">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Complete Solutions for Protein Engineering Success</h2>
+                    </div>
+                    <div class="margin-bottom margin-small">
+                      <p class="text-size-medium">Our end-to-end protein engineering services streamline the entire process from variant design to validation. We ensure that every step is meticulously executed for optimal results.</p>
+                    </div>
+                    <div class="layout16_item-list">
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a63-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M291.43-600.3H106.71q-14.09 0-23.39-9.35t-9.3-23.34q0-14 9.3-23.29t23.39-9.29h184.72v-137.32l-54.21 54.46q-9.9 9.71-23.12 9.71-13.23 0-23.37-9.71-9.3-9.72-9.18-23.04.12-13.31 9.84-23.03L300.2-903.3q10.19-10.2 23.98-10.2 13.8 0 23.99 10.2l109.05 109.04q9.48 9.76 9.71 22.93.24 13.18-9.17 22.9-10.26 9.71-23.58 9.71-13.31 0-23.03-9.95l-54.22-54.22v442.96h496.66q13.86 0 23.25 9.5 9.38 9.5 9.38 23.54 0 13.94-9.38 23.2-9.39 9.26-23.25 9.26H669.04v137.32l54.22-54.22q9.61-9.95 22.83-9.96 13.23-.01 23.68 9.96 9.27 9.72 9.15 22.92-.12 13.19-9.83 22.91L660.04-56.46q-10.21 10.2-23.88 10.08-13.66-.12-23.86-10.08L503.26-165.74q-9.72-9.48-9.84-22.67-.12-13.2 9.16-22.92 10.38-9.97 23.59-9.84 13.2.13 23.16 9.84l53.97 54.22v-137.32H356.93q-28.1 0-46.8-18.55-18.7-18.54-18.7-46.95V-600.3ZM603.3-419.93V-600.3H416.93v-65.27H603.3q28.37 0 47.06 18.56 18.68 18.55 18.68 46.71v180.37H603.3Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Transforming ideas into validated protein solutions efficiently.</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a69-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="M213.24-115.93q-21.67 0-36.37-14.7-14.7-14.7-14.7-36.37 0-21.67 14.7-36.37 14.7-14.7 36.37-14.7h80L190.35-569.3q-35.11-14.77-55.14-42.18-20.04-27.41-20.04-72.52 0-49.15 36.06-85.33 36.05-36.17 85.2-36.17 46.16 0 76.83 24.82 30.67 24.81 41.39 66.68H491.8v-59q0-13.2 9.72-22.91 9.72-9.72 22.91-9.72 10.77 0 18.27 8.14t7.73 18.9l73.33-70.32q8.72-8.48 21.94-11.22 13.21-2.74 26.93 3.5l158 76q10.2 5.48 14.05 15.67 3.86 10.2-1.85 21.39-5.48 10.72-16.06 13.2-10.57 2.48-20.53-3.24l-153.09-74.28-95.85 96.85v49.61l95.85 101.08 153.09-74.8q11.19-5.48 21.03-2.86 9.84 2.62 15.56 13.34 5.71 11.19 1.85 22.39-3.85 11.19-15.05 16.67l-152.28 71.76q-15.2 7.72-29.03 7.1-13.84-.62-24.56-11.34l-73.33-70.32q-.23 14-7.61 20.52-7.39 6.52-18.39 6.52-13.19 0-22.91-9.72-9.72-9.71-9.72-22.91v-60H352.65q-.48 13.2-7.93 27.85-7.46 14.65-17.18 22.65l199.74 385.43h113.15q21.68 0 36.37 14.7 14.7 14.7 14.7 36.37 0 21.67-14.7 36.37-14.69 14.7-36.37 14.7H213.24ZM236.43-628q24 0 40-16t16-40q0-24-16-40t-40-16q-24 0-40 16t-16 40q0 24 16 40t40 16Zm123.05 409.93h100.8L276.07-576.46q-3.48 2.24-10.6 4.36-7.12 2.12-11.12 3.12l105.13 350.91Zm100.8 0Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Delivering precision and reliability in protein engineering.</p>
+                        </div>
+                      </div>
+                      <div id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7a6f-bd9ac51d" class="layout16_item">
+                        <div class="layout16_item-icon-wrapper">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 -960 960 960">
+                              <path fill="currentColor" d="m456.13-652.15-80.61-81.61q-10.19-10.2-10.19-23.99t10.19-23.99l80.61-81.61q10.2-10.19 23.99-10.19t23.99 10.19l81.61 81.61q10.19 10.2 10.19 23.99t-10.19 23.99l-81.61 81.61q-10.2 10.19-23.99 10.19t-23.99-10.19Zm-389 503.87q-14.67 0-24.37-9.7-9.69-9.69-9.69-24.37v-130q0-30.67 21.81-52.37 21.82-21.69 52.25-21.69h142.2q17.47 0 32.38 8.02 14.9 8.02 25.42 22.3 29.48 42.72 75.2 66.2 45.71 23.48 97.67 23.48 51.72 0 97.55-23.48 45.84-23.48 76.56-66.2 10.04-14.28 24.56-22.3 14.53-8.02 32.24-8.02h142.2q30.67 0 52.37 21.69 21.69 21.7 21.69 52.37v130q0 14.68-9.69 24.37-9.7 9.7-24.37 9.7h-200q-14.68 0-24.37-9.7-9.7-9.69-9.7-24.37v-86.37q-36.24 31.81-82.38 49.33-46.14 17.52-96.66 17.52-50.28 0-96.04-17.4-45.76-17.4-82.76-49.45v86.37q0 14.68-9.7 24.37-9.7 9.7-24.37 9.7h-200ZM160-463.59q-45.72 0-78.7-32.98-32.97-32.97-32.97-78.93 0-46.48 32.97-79.08 32.98-32.59 78.7-32.59 46.72 0 79.32 32.59 32.59 32.6 32.59 79.08 0 45.96-32.59 78.93-32.6 32.98-79.32 32.98Zm640 0q-45.72 0-78.7-32.98-32.97-32.97-32.97-78.93 0-46.48 32.97-79.08 32.98-32.59 78.7-32.59 46.72 0 79.32 32.59 32.59 32.6 32.59 79.08 0 45.96-32.59 78.93-32.6 32.98-79.32 32.98Z"></path>
+                            </svg></div>
+                        </div>
+                        <div class="layout16_item-text-wrapper">
+                          <p>Your partner in innovative protein engineering solutions.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout16_image-wrapper"><img sizes="(max-width: 767px) 100vw, 720.0000610351562px" srcset="images/relume-259360-p-500.jpeg 500w, images/relume-259360.jpeg 720w" alt="" src="images/relume-259360.jpeg" loading="eager" class="layout16_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_layout25 color-scheme-4">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout25_component">
+                <div class="w-layout-grid layout25_content">
+                  <div class="layout25_content-left">
+                    <div class="margin-bottom margin-xsmall">
+                      <div class="text-style-tagline">Insights</div>
+                    </div>
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading-style-h2">Accelerate Your Research with Structural Insights</h2>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <p class="text-size-medium">PiBook’s structural platforms deliver binary complex structures significantly faster than conventional methods. This speed allows for informed, data-driven decisions and provides AI-ready insights for your projects.</p>
+                    </div>
+                    <div class="w-layout-grid layout25_item-list">
+                      <div class="layout25_text-wrapper">
+                        <div class="margin-bottom margin-xxsmall">
+                          <div class="heading-style-h2">50%</div>
+                        </div>
+                        <p>Transforming data into actionable insights quickly.</p>
+                      </div>
+                      <div class="layout25_text-wrapper">
+                        <div class="margin-bottom margin-xxsmall">
+                          <div class="heading-style-h2">50%</div>
+                        </div>
+                        <p>Empowering your research with rapid structural data.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout25_image-wrapper"><img sizes="(max-width: 767px) 100vw, 720.0000610351562px" srcset="images/relume-259400-p-500.jpeg 500w, images/relume-259400.jpeg 720w" alt="" src="images/relume-259400.jpeg" loading="eager" class="layout25_image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_team1 color-scheme-8">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="team1_component">
+                <div class="margin-bottom margin-xxlarge">
+                  <div class="text-align-center">
+                    <div id="Our-Team" class="max-width-large align-center">
+                      <div class="margin-bottom margin-small">
+                        <h2 class="heading-style-h2">Our Team</h2>
+                      </div>
+                      <p class="text-size-medium">Dedicated professionals driving innovation in protein engineering.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="team1_list-wrapper">
+                  <div class="w-layout-grid team1_list">
+                    <div class="team1_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="team1_image-wrapper"><img sizes="(max-width: 767px) 100vw, 601.9907836914062px" srcset="images/relume-263875-p-500.jpeg 500w, images/relume-263875.jpeg 602w" alt="" src="images/relume-263875.jpeg" loading="eager" class="team1_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="team1_title-wrapper">
+                          <div class="text-size-large text-weight-semibold">Dr. Zahid Kamal</div>
+                          <div class="text-size-medium">Co-founder &amp; CEO</div>
+                        </div>
+                      </div>
+                      <p>Expert in wet-lab platforms &amp; protein structure research, with 20+ years of experience. Leads PiBook Bio’s experimental operations and assay development.</p>
+                      <div class="margin-top margin-small">
+                        <div class="w-layout-grid team1_social">
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.03145 3 3 7.03145 3 12C3 16.9686 7.03145 21 12 21C16.9588 21 21 16.9686 21 12C21 7.03145 16.9588 3 12 3ZM17.9447 7.14859C19.0184 8.45662 19.6627 10.1258 19.6822 11.9317C19.4284 11.8829 16.8904 11.3655 14.333 11.6876C14.2744 11.5607 14.2256 11.4241 14.167 11.2874C14.0108 10.9165 13.8352 10.5358 13.6594 10.1746C16.4902 9.0228 17.7787 7.36334 17.9447 7.14859ZM12 4.32755C13.9523 4.32755 15.7386 5.05966 17.0955 6.26031C16.9588 6.45553 15.7972 8.00759 13.064 9.03253C11.8048 6.71909 10.4089 4.82538 10.1942 4.53254C10.77 4.39588 11.3753 4.32755 12 4.32755ZM8.72996 5.04989C8.93494 5.32321 10.3015 7.22668 11.5803 9.49131C7.98807 10.448 4.81562 10.4284 4.47397 10.4284C4.9718 8.04664 6.58243 6.06507 8.72996 5.04989ZM4.30803 12.0098C4.30803 11.9317 4.30803 11.8536 4.30803 11.7755C4.63991 11.7852 8.36876 11.8341 12.205 10.6822C12.4295 11.1117 12.6345 11.551 12.8297 11.9902C12.7321 12.0195 12.6247 12.0488 12.5271 12.0781C8.56399 13.3568 6.45553 16.8514 6.27983 17.1442C5.05965 15.7874 4.30803 13.9816 4.30803 12.0098ZM12 19.692C10.2234 19.692 8.58352 19.0868 7.28525 18.0716C7.42191 17.7885 8.98371 14.782 13.3178 13.269C13.3373 13.2592 13.3471 13.2592 13.3666 13.2495C14.4501 16.051 14.8894 18.4034 15.0065 19.077C14.0792 19.4772 13.064 19.692 12 19.692ZM16.2852 18.3742C16.2072 17.9056 15.7972 15.6605 14.7917 12.898C17.2028 12.5173 19.3113 13.1421 19.5749 13.23C19.243 15.3677 18.013 17.2126 16.2852 18.3742Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team1_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="team1_image-wrapper"><img loading="eager" src="images/relume-260841.jpeg" alt="" class="team1_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="team1_title-wrapper">
+                          <div class="text-size-large text-weight-semibold">Dr. Tabrez Mohammad</div>
+                          <div class="text-size-medium">Co-founder</div>
+                        </div>
+                      </div>
+                      <p>AI specialist, with 20+ years of active research experience, driving data strategy and computational integration across PiBook Bio.</p>
+                      <div class="margin-top margin-small">
+                        <div class="w-layout-grid team1_social">
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                          <a href="#" class="social-link w-inline-block">
+                            <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.03145 3 3 7.03145 3 12C3 16.9686 7.03145 21 12 21C16.9588 21 21 16.9686 21 12C21 7.03145 16.9588 3 12 3ZM17.9447 7.14859C19.0184 8.45662 19.6627 10.1258 19.6822 11.9317C19.4284 11.8829 16.8904 11.3655 14.333 11.6876C14.2744 11.5607 14.2256 11.4241 14.167 11.2874C14.0108 10.9165 13.8352 10.5358 13.6594 10.1746C16.4902 9.0228 17.7787 7.36334 17.9447 7.14859ZM12 4.32755C13.9523 4.32755 15.7386 5.05966 17.0955 6.26031C16.9588 6.45553 15.7972 8.00759 13.064 9.03253C11.8048 6.71909 10.4089 4.82538 10.1942 4.53254C10.77 4.39588 11.3753 4.32755 12 4.32755ZM8.72996 5.04989C8.93494 5.32321 10.3015 7.22668 11.5803 9.49131C7.98807 10.448 4.81562 10.4284 4.47397 10.4284C4.9718 8.04664 6.58243 6.06507 8.72996 5.04989ZM4.30803 12.0098C4.30803 11.9317 4.30803 11.8536 4.30803 11.7755C4.63991 11.7852 8.36876 11.8341 12.205 10.6822C12.4295 11.1117 12.6345 11.551 12.8297 11.9902C12.7321 12.0195 12.6247 12.0488 12.5271 12.0781C8.56399 13.3568 6.45553 16.8514 6.27983 17.1442C5.05965 15.7874 4.30803 13.9816 4.30803 12.0098ZM12 19.692C10.2234 19.692 8.58352 19.0868 7.28525 18.0716C7.42191 17.7885 8.98371 14.782 13.3178 13.269C13.3373 13.2592 13.3471 13.2592 13.3666 13.2495C14.4501 16.051 14.8894 18.4034 15.0065 19.077C14.0792 19.4772 13.064 19.692 12 19.692ZM16.2852 18.3742C16.2072 17.9056 15.7972 15.6605 14.7917 12.898C17.2028 12.5173 19.3113 13.1421 19.5749 13.23C19.243 15.3677 18.013 17.2126 16.2852 18.3742Z" fill="CurrentColor"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_contact2 color-scheme-3">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="contact2_component">
+                <div class="margin-bottom margin-xxlarge">
+                  <div class="text-align-center">
+                    <div id="Contact-Us" class="max-width-large align-center">
+                      <div class="margin-bottom margin-small">
+                        <h2 class="heading-style-h2">Contact Us</h2>
+                      </div>
+                      <p class="text-size-medium">We&#x27;d love to hear from you!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="max-width-large align-center">
+                  <div class="contact2_form-block w-form">
+                    <form id="wf-form-Contact-2-Form" name="wf-form-Contact-2-Form" data-name="Contact 2 Form" class="contact2_form" data-wf-page-id="68c1004bfbceec8cbd9ac51d" data-wf-element-id="332190eb-e456-e3e6-9113-8eaa559a7b12" id="contact-form" action="https://formspree.io/f/xyzdaelk" method="POST">
+                      <div class="form_field-2col is-alternate">
+                        <div class="form_field-wrapper is-alternate"><label for="Contact-2-First-Name-2" class="form_field-label is-alternate">First Name</label><input class="form_input is-alternate w-input" maxlength="256" name="Contact-2-First-Name" data-name="Contact 2 First Name" placeholder="" type="text" id="Contact-2-First-Name-2" required=""></div>
+                        <div class="form_field-wrapper is-alternate"><label for="Contact-2-Last-Name" class="form_field-label is-alternate">Last Name</label><input class="form_input is-alternate w-input" maxlength="256" name="Contact-2-Last-Name" data-name="Contact 2 Last Name" placeholder="" type="text" id="Contact-2-Last-Name" required=""></div>
+                      </div>
+                      <div class="form_field-2col is-mobile-1col is-alternate">
+                        <div class="form_field-wrapper is-alternate"><label for="Contact-2-Email-2" class="form_field-label is-alternate">Email</label><input class="form_input is-alternate w-input" maxlength="256" name="Contact-2-Email-2" data-name="Contact 2 Email 2" placeholder="" type="email" id="Contact-2-Email-2" required=""></div>
+                        <div class="form_field-wrapper is-alternate"><label for="Contact-2-Phone" class="form_field-label is-alternate">Phone Number</label><input class="form_input is-alternate w-input" maxlength="256" name="Contact-2-Phone" data-name="Contact 2 Phone" placeholder="" type="tel" id="Contact-2-Phone" required=""></div>
+                      </div>
+                      <div class="form_field-wrapper is-alternate"><label for="Contact-2-Message" class="form_field-label is-alternate">Message</label><textarea id="Contact-2-Message" name="Contact-2-Message" maxlength="5000" data-name="Contact 2 Message" placeholder="Type your message..." required="" class="form_input is-text-area is-alternate w-input"></textarea></div><input type="submit" data-wait="Please wait..." id="w-node-_332190eb-e456-e3e6-9113-8eaa559a7b50-bd9ac51d" class="button w-button" value="Send">
+                    </form>
+                    <div class="form_message-success-wrapper is-alternate w-form-done">
+                      <div class="form_message-success">
+                        <div class="success-text">Thank you! We will get back to you!</div>
+                      </div>
+                    </div>
+                    <div class="form_message-error-wrapper is-alternate w-form-fail">
+                      <div class="form_message-error">
+                        <div class="error-text">Oops! There was an error with your submission.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68c1004bfbceec8cbd9ac51b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
